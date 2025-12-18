@@ -71,3 +71,27 @@ python -m http.server 8000
 ├── assets/           # 静态资源 (音乐, JSON数据等)
 └── tracking/         # (如有) 追踪相关代码
 ```
+
+## 🚀 部署到 GitHub Pages
+
+1.  **提交代码**: 确保所有更改都已提交到 Git。
+    ```bash
+    git add .
+    git commit -m "准备部署"
+    ```
+2.  **推送到 GitHub**:
+    ```bash
+    # 如果还没有远程仓库，请先在 GitHub 上创建
+    git remote add origin https://github.com/E1906/3DGestureChristmasTree.git
+    git branch -M main
+    git push -u origin main
+    ```
+3.  **开启 Pages**:
+    *   打开 GitHub 仓库页面 -> **Settings** (设置)
+    *   在左侧菜单点击 **Pages**
+    *   在 **Build and deployment** 下:
+        *   Source: 选择 **Deploy from a branch**
+        *   Branch: 选择 **main** / **root**
+    *   点击 **Save**
+4.  **访问**: 等待几分钟后，刷新页面即可看到部署链接（通常是 `https://e1906.github.io/3DGestureChristmasTree/`）。
+
