@@ -1,5 +1,7 @@
 # Gesture Christmas Tree (手势控制圣诞树)
 
+> 🎄 **[👉 点击此处体验在线演示](https://e1906.github.io/3DGestureChristmasTree/)** 🎄
+
 这是一个基于 Three.js 和 MediaPipe 的 Web 互动项目。通过摄像头捕捉手势，你可以与 3D 圣诞树进行神奇的交互！
 
 ## ✨ 功能特点
