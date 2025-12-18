@@ -195,7 +195,7 @@ async function init() {
     } catch (err) {
         console.warn("Could not load photos from directory listing. Using fallback.", err);
         // Fallback
-        photoUrls = ['./assets/christmas.png']; 
+        photoUrls = ['./assets/christmas.png', './assets/1742792632841078_2.png', './assets/1743222584511748_4.png', './assets/1743574302300273_3.png']; 
     }
     
     // Pre-load all photo textures
