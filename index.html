@@ -10,19 +10,15 @@
     <script type="importmap">
         {
             "imports": {
-                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
-                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+                "three": "./libs/three/three.module.js",
+                "three/addons/": "./libs/three/addons/"
             }
         }
     </script>
     
     <!-- MediaPipe dependencies will be loaded dynamically or via module in main.js -->
-    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision/vision_bundle.js" crossorigin="anonymous"></script>
+    <script src="./libs/mediapipe/vision_bundle.js" crossorigin="anonymous"></script>
     
-    <!-- Artistic Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="loading-overlay">

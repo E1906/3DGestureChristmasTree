@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Great Vibes';
+    src: url('./libs/fonts/GreatVibes.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --primary-color: #0f172a;
     --text-color: #f8fafc;
@@ -103,6 +110,7 @@ body {
     /* Rose Gold Gradient Text */
     background: linear-gradient(to bottom, #f3cfd4 0%, #e5acb6 50%, #c17f8b 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 
     /* Fallback and Glow */

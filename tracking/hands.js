@@ -1,5 +1,5 @@
 
-import { FilesetResolver, HandLandmarker } from 'https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@latest/vision_bundle.js';
+import { FilesetResolver, HandLandmarker } from '../libs/mediapipe/vision_bundle.js';
 
 let handLandmarker = undefined;
 let webcam = undefined;
@@ -8,12 +8,12 @@ let lastGestureTime = 0;
 
 export async function initializeHandTracking(onGestureChange) {
     const vision = await FilesetResolver.forVisionTasks(
-        "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision/wasm"
+        "./libs/mediapipe/wasm"
     );
 
     handLandmarker = await HandLandmarker.createFromOptions(vision, {
         baseOptions: {
-            modelAssetPath: `https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task`,
+            modelAssetPath: `./libs/mediapipe/models/hand_landmarker.task`,
             delegate: "GPU"
         },
         runningMode: runningMode,
